@@ -1,0 +1,70 @@
+/* Body Tag */
+body {
+  background-color: black;
+  color: gray;
+  font-weight: 300;
+}
+
+/* Nav Header */
+#nav-header {
+  position: absolute;
+  width: 100%;
+  height: 47px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+/* All spans under #nav-header */
+#nav-header > span {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin: 14px 10px;
+  display: inline-block;
+}
+
+/* Visited links under #nav-header */
+#nav-header > span > a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero poster */
+#hero {
+  background-image: url(300-hero.jpg);
+  background-size: cover;
+  height: 188px;
+}
+
+/* Text narrative */
+.narrative {
+  font-size: 16px;
+}
+
+/* YouTube player iFrame */
+#ytplayer {
+  width: 100%;
+  height: 210px;
+}
+
+/* Horizontal image gallery */
+.gallery {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 25px;
+}
+
+/* I want to have neighboring images peek through.
+   All <img> elements underneath .gallery
+   are shrunk to 90% width. */
+.gallery > img {
+  width: 90%;
+}
+
+.gallery::-webkit-scrollbar { 
+  display: none; 
+}
+
+/* Apply this to all .row elements to create breathing room.*/
+.spacer {
+  margin-top: 25px;
+}

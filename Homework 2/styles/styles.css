@@ -24,6 +24,10 @@ body {
   padding: 40px;
 }
 
+#lineup > img {
+  width: 20%;
+}
+
 h1 {
   color: #FFFFFF;
   font-family: 'Raleway Dots', sans-serif;
@@ -42,12 +46,9 @@ h1 {
   min-height: 200px;
 }
 
-.headshot {
+.headshot > img {
   min-height: 200px;
-  background-image: url("../img/headshot.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: visible;
+  width: 100%;
 }
 
 .name {
@@ -118,6 +119,6 @@ td {
 }
 
 #map {
-  background-image: url(img/map.png);
-  background-size: cover;
+  background-color: white;
+  margin-top: 80px;
 }

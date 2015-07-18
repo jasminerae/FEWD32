@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+  <div id="cards-container"></div>
+
+  <!-- Template. -->
+  <script id="card-template" type="x-tmpl-mustache">
+    <div class="card" style="background-image: url({{image}})">
+      <div class="cast">{{cast}}</div>
+      <div class="teaser">{{teaser}}</div>
+    </div>
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="cards.js"></script>
+
+</body>
+</html>

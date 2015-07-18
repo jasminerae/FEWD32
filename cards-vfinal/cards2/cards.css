@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin: 75px 0;
+}
+
+#main-navbar {
+  position: fixed;
+  top: 0;
+  width: 200%;
+  height: 47px;
+  background-image: -webkit-linear-gradient(top, #517fa4, #306088);
+  box-shadow: 2px 3px 10px rgba(50, 50, 50, 0.75);
+  z-index: 900;
+}
+
+.card {
+  width: 450px;
+  height: 360px;
+  background-size: 450px 300px;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  margin: 25px auto;
+}
+
+.title {
+  position: relative;
+  left: 15px;
+  top: 310px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 18px;
+  color: #555;
+}
+
+.size {
+  position: relative;
+  left: 15px;
+  top: 314px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 15px;
+  color: #999;
+}
+
+.profile {
+  position: relative;
+  left: 370px;
+  top: 190px;
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 68px;
+  border-radius: 50px;
+}
+
+.price {
+  position: relative;
+  left: 0;
+  top: 200px;
+  height: 40px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}

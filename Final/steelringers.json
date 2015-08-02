@@ -1,0 +1,49 @@
+{ 
+  "kizze": [
+    { "id":"earPiercingScream",
+      "name":"Ear-Piercing Scream",
+      "school":"Evocation",
+      "level":1,
+      "castingTime":"1 standard action",
+      "components":["Verbal", "Somatic"],
+      "target":"1 creature",
+      "range":"Close",
+      "duration":"Instantaneous",
+      "savingThrow":"Fortitude partial",
+      "spellResistance":true,
+      "description":"You unleash a powerful scream, inaudible to all but a single target. The target is dazed for 1 round and takes 1d6 points of sonic damage per two caster levels (maximum 5d6). A successful save negates the daze effect and halves the damage."
+    },
+    { "id":"charmPerson",
+      "name":"Charm Person",
+      "school":"Enchantment (charm) [mind-affecting]",
+      "level":1,
+      "castingTime":"1 standard action",
+      "components":["Verbal", "Somatic"],
+      "target":"1 humanoid creature",
+      "range":"Close",
+      "duration":"1 hour/level",
+      "savingThrow":"Will negates",
+      "spellResistance":true,
+      "description":"This charm makes a humanoid creature regard you as its trusted friend and ally. If the creature is currently being threatened or attacked by you or your allies, however, it receives a +5 bonus on its saving throw. The spell does not enable you to control the charmed person as if it were an automaton, but it perceives your words and actions in the most favorable way. You can try to give the subject orders, but you must win an opposed Charisma check to convince it to do anything it wouldn’t ordinarily do. (Retries are not allowed.) An affected creature never obeys suicidal or obviously harmful orders, but it might be convinced that something very dangerous is worth doing. Any act by you or your apparent allies that threatens the charmed person breaks the spell. You must speak the person’s language to communicate your commands, or else be good at pantomiming."
+    },
+    { "id":"illOmen",
+      "name":"Ill Omen",
+      "school":"Enchantment (compulsion) [curse, mind-affecting]",
+      "level":1,
+      "castingTime":"1 standard action",
+      "components":["Verbal", "Somatic", "Material (a hair from a black cat)"],
+      "target":"1 creature",
+      "range":"Close",
+      "duration":"1 round/level or until discharged",
+      "savingThrow":"None",
+      "spellResistance":true,
+      "description":"You afflict the target with bad luck. On the next d20 roll the target makes, it must roll twice and take the less favorable result. For every five caster levels you have, the target must roll twice on an additional d20 roll (to a maximum of five rolls at 20th level). A target who can speak and has at least one free hand and who is aware of the spell and its effects (such as from a Spellcraft check to identify the spell as it is cast) can negate one reroll by spending a move action to utter a brief prayer or good luck charm to appease the spirits of ill fortune."
+    }
+  ],
+  "squallo": [
+  ],
+  "crunch": [
+  ],
+  "monk":[
+  ]
+}

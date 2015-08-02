@@ -23,6 +23,7 @@ body {
 }
 
 .cast {
+  text-align: left;
   position: relative;
   left: 15px;
   top: 195px;

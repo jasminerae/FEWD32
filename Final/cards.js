@@ -8,7 +8,7 @@ function fetchData() {
       console.log(spells[i]);
 
       if (Array.isArray(spells[i].components)) {
-        spells[i].components = spells[i].components.join(', ');
+        spells[i].components = spells[i].components.join('; ');
       }
 
       if (spells[i].savingThrow == "None"){

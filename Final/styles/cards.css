@@ -2,10 +2,12 @@
 }
 
 .card {
-  background-color: #DDD0E4;
-  color: #382c3f;
+  background-color: #ffffff;
+  color: #796982;
+  width: 260px;
+  height: 400px;
+  overflow: hidden;
   padding: 20px;
-  width: 320px;
   position: relative;
   display: inline-block;
   border: none;
@@ -15,20 +17,17 @@
   margin: 10px; 
 }
 
-.grid-item { width: 350px; }
-.grid-item--width2 { width: 720px; }
-
 .name {
-  color: #BB0A1A;
+  color: #382c3f;
   font-family: 'Raleway', sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   text-transform: uppercase;
   margin-bottom: 5px;
   text-align: center;
 }
 
 .school{
-  color: #BB0A1A;
+  color: #382c3f;
   font-family: 'Raleway', sans-serif;
   font-size: 8pt;
   text-transform: uppercase;
@@ -64,7 +63,7 @@
 .cardLabel {
   position: absolute;
   left: 20px;
-  color: #382c3f;
+  color: #796982;
   font-family: 'Raleway', sans-serif;
   font-size: 8pt;
   text-transform: uppercase;
@@ -72,7 +71,7 @@
 
 .cardStat {
   position: relative;
-  left: 100px;
+  left: 60px;
   color: #382c3f;
   font-family: 'Raleway', sans-serif;
   font-size: 10pt;
@@ -86,5 +85,3 @@
 ul {
   list-style-type: none;
 }
-
-itemSelector:'.grid-item'

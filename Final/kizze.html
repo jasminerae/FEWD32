@@ -16,7 +16,7 @@
   <!-- Main container. -->
   <div class="container">
     <!-- Left profile column. -->
-    <div class="profile center col-md-4">
+    <div class="profile center col-md-3">
       <div class="character">Kizze, Rom Baro</div>
       <div class="raceClass">Gnome Witch</div>
       <div class="player">Played by Jasmine Friedrich</div>
@@ -48,14 +48,15 @@
     </div>
 
     <!-- Right spellbook column. -->
-    <div id="spellBook" class="grid js-masonry" data-masonry-options='{ "columnWidth": 350, "itemSelector": ".grid-item"}'>
+    <div id="spellBook">
 
       <!-- Mustache tranclusion. -->
       <script id="spellTemplate" type="x-tmpl-mustache">
-        <div id="{{key}}" class="card grid-item" itemSelector:'.grid-item'>
+        <div id="{{key}}" class="card">
           <div class="name">{{name}}</div>
           <div class="school">{{school}}</div>
           <div class="level">Level {{level}}</div>
+          <hr>
           <ul>
             <li><span class="cardLabel">Casting Time</span><span class="cardStat">{{castingTime}}</span></li>
             <li><span class="cardLabel">Components</span><span class="cardStat">{{components}}</span></li>
@@ -65,6 +66,7 @@
           </ul>
           <div class="savingThrow">{{savingThrow}}</div>
           <div class="spellResistance">{{spellResistance}}</div>
+          <hr>
           <div class="description">{{description}}</div>
         </div>
       </script>
@@ -73,7 +75,6 @@
   </div>
 
   <!-- Include scripts. -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
   <script src="cards.js"></script>

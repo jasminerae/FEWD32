@@ -4,7 +4,7 @@
 .card {
   background-color: #ffffff;
   color: #796982;
-  width: 260px;
+  width: 240px;
   height: 400px;
   overflow: hidden;
   padding: 20px;
@@ -60,21 +60,19 @@
   text-align: center;
 }
 
-.cardLabel {
-  position: absolute;
-  left: 20px;
+.spellTable th {
   color: #796982;
   font-family: 'Raleway', sans-serif;
   font-size: 8pt;
   text-transform: uppercase;
+  border-top: none !important; 
 }
 
-.cardStat {
-  position: relative;
-  left: 60px;
+.spellTable td {
   color: #382c3f;
   font-family: 'Raleway', sans-serif;
-  font-size: 10pt;
+  font-size: 8pt;
+  border-top: none !important; 
 }
 
 .description {

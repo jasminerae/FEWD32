@@ -16,13 +16,13 @@
   <!-- Main container. -->
   <div class="container">
     <!-- Left profile column. -->
-    <div class="profile center col-md-3">
+    <div class="profile center col-md-3 col-sm-6">
       <div class="character">Kizze, Rom Baro</div>
       <div class="raceClass">Gnome Witch</div>
       <div class="player">Played by Jasmine Friedrich</div>
       <img src="img/Kizze.svg">
         <span class="label">Lvl</span>&nbsp;<span class="stat">10</span>&emsp;<span class="label">AC</span>&nbsp;<span class="stat">12</span>&emsp;<span class="label">HP</span>&nbsp;<span class="stat">73</span>&emsp;<span class="label">Init</span>&nbsp;<span class="stat">+1</span>
-      <table class="table">
+      <table class="table abilityTable">
         <tr>
           <th>Str</th>
           <th>Dex</th>
@@ -48,7 +48,7 @@
     </div>
 
     <!-- Right spellbook column. -->
-    <div id="spellBook">
+    <div id="spellBook" class="center col-md-9 col-sm-6">
 
       <!-- Mustache tranclusion. -->
       <script id="spellTemplate" type="x-tmpl-mustache">
@@ -57,13 +57,13 @@
           <div class="school">{{school}}</div>
           <div class="level">Level {{level}}</div>
           <hr>
-          <ul>
-            <li><span class="cardLabel">Casting Time</span><span class="cardStat">{{castingTime}}</span></li>
-            <li><span class="cardLabel">Components</span><span class="cardStat">{{components}}</span></li>
-            <li><span class="cardLabel">Target</span><span class="cardStat">{{target}}</span></li>
-            <li><span class="cardLabel">Range</span><span class="cardStat">{{range}}</span></li>
-            <li><span class="cardLabel">Duration</span><span class="cardStat">{{duration}}</span></li>
-          </ul>
+          <table class="table spellTable table-condensed">
+            <tr><th>Casting Time</th><td>{{castingTime}}</td></tr>
+            <tr><th>Components</th><td>{{components}}</td></tr>
+            <tr><th>Target</th><td>{{target}}</td></tr>
+            <tr><th>Range</th><td>{{range}}</td></tr>
+            <tr><th>Duration</th><td>{{duration}}</td></tr>
+          </table>
           <div class="savingThrow">{{savingThrow}}</div>
           <div class="spellResistance">{{spellResistance}}</div>
           <hr>

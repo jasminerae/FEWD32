@@ -25,12 +25,20 @@ function buildSpellBook(spells) {
   }
 }
 
-fetchData();
-
 function bindEventListeners() {
   $(".card").flip({
     axis: 'y',
-    trigger: 'hover'
+    trigger: 'click'
   });
 
+  $('.attackButton').click(function(){
+    console.log("CRITICAL HIT");
+  });
+
+  $('.damageButton').click(function(){
+    console.log("MAX DAMAGE");
+  });
+  console.log($('#attackButton'));
 }
+
+fetchData();

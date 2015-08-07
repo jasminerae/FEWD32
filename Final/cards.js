@@ -31,14 +31,19 @@ function bindEventListeners() {
     trigger: 'click'
   });
 
-  $('.attackButton').click(function(){
+  $('.attackButton').click(function(event){
     console.log("CRITICAL HIT");
+    $(".card").click(function(event) {
+      event.preventDefault();
+    });
   });
 
-  $('.damageButton').click(function(){
+  $('.damageButton').click(function(event){
     console.log("MAX DAMAGE");
+    $(".card").click(function(event) {
+      event.preventDefault();
+    });
   });
-  console.log($('#attackButton'));
 }
 
 fetchData();

@@ -52,22 +52,27 @@
 
       <!-- Mustache tranclusion. -->
       <script id="spellTemplate" type="x-tmpl-mustache">
-        <div id="{{key}}" class="card">
-          <div class="name">{{name}}</div>
-          <div class="school">{{school}}</div>
-          <div class="level">Level {{level}}</div>
-          <hr>
-          <table class="table spellTable table-condensed">
-            <tr><th>Casting Time</th><td>{{castingTime}}</td></tr>
-            <tr><th>Components</th><td>{{components}}</td></tr>
-            <tr><th>Target</th><td>{{target}}</td></tr>
-            <tr><th>Range</th><td>{{range}}</td></tr>
-            <tr><th>Duration</th><td>{{duration}}</td></tr>
-          </table>
-          <div class="savingThrow">{{savingThrow}}</div>
-          <div class="spellResistance">{{spellResistance}}</div>
-          <hr>
-          <div class="description">{{description}}</div>
+        <div id="{{id}}" class="card">
+          <div class="front">
+            <div class="name">{{name}}</div>
+            <div class="school">{{school}}</div>
+            <div class="level">Level {{level}}</div>
+            <hr>
+            <table class="table spellTable table-condensed">
+              <tr><th>Target</th><td>{{target}}</td></tr>
+              <tr><th>Range</th><td>{{range}}</td></tr>
+              <tr><th>Components</th><td>{{components}}</td></tr>
+              <tr><th>Casting Time</th><td>{{castingTime}}</td></tr>
+              <tr><th>Duration</th><td>{{duration}}</td></tr>
+            </table>
+            <div class="savingThrow">{{savingThrow}}</div>
+            <div class="spellResistance">{{spellResistance}}</div>
+            <hr>
+            <div class="description">{{description}}</div>
+          </div>
+          <div class="back">
+          HELLO
+          </div>
         </div>
       </script>
     </div>
@@ -75,7 +80,9 @@
   </div>
 
   <!-- Include scripts. -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.15/dist/jquery.flip.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
   <script src="cards.js"></script>
 

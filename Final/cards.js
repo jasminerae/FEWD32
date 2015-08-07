@@ -33,16 +33,12 @@ function bindEventListeners() {
 
   $('.attackButton').click(function(event){
     console.log("CRITICAL HIT");
-    $(".card").click(function(event) {
-      event.preventDefault();
-    });
+    $(".card").flip(false);
   });
 
   $('.damageButton').click(function(event){
     console.log("MAX DAMAGE");
-    $(".card").click(function(event) {
-      event.preventDefault();
-    });
+    $(".card").flip(false);
   });
 }
 

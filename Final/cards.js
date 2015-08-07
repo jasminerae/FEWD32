@@ -3,7 +3,7 @@ var spellBook = {};
 function fetchData() {
   var rawTemplate = $('#spellTemplate').html();
 
-  $.get('http://steelringers.firebaseio.com/kizze.json', function(spells) {
+  $.get('https://steelringers.firebaseio.com/kizze.json', function(spells) {
     for (var i = 0; i < spells.length; i++) {
 
       if (Array.isArray(spells[i].components)) {

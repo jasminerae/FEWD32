@@ -1,5 +1,6 @@
 var spellBook = {};
 var damage = 0;
+var attack = 0;
 
 function fetchData() {
   var rawTemplate = $('#spellTemplate').html();
@@ -22,7 +23,7 @@ function fetchData() {
 
 function buildSpellBook(spells) {
   for (var i = 0; i < spells.length; i++) {
-    spellBook[spells[i].key] = spells[i];
+    spellBook[spells[i].id] = spells[i];
   }
 }
 
@@ -33,17 +34,19 @@ function bindEventListeners() {
   });
 
   $('.attackButton').click(function(e){
-    console.log("CRITICAL HIT");
     event.stopPropagation();
-    var targetSpell = $(this).parent().parent().id;
-    console.log(targetSpell);
+    var targetSpell = $(this).parent().parent().parent().attr('id');
+    attack = 0
+    attack = ("HIT");
+    $('#'+targetSpell+'attackResult').html(attack);
   });
 
   $('.damageButton').click(function(e){
     event.stopPropagation();
-    console.log("MAX DAMAGE");
-    damage = 0;
-    console.log(rollDamage(n, d));
+    var targetSpell = $(this).parent().parent().parent().attr('id');
+    damage = 0
+    damage = (rollDamage(spellBook[targetSpell].n, spellBook[targetSpell].d));
+    $('#'+targetSpell+'damageResult').html(damage);
   });
 }
 
@@ -51,7 +54,14 @@ fetchData();
 
 function rollDamage(n, d) {
   for (var i = 0; i < n; i++) {
-    damage += Math.floor(Math.random * d) + 1;
-    return damage;
+    damage += (Math.floor(Math.random() * d)) + 1;
   };
+  return damage;
+}
+
+function rollDamage(n, d) {
+  for (var i = 0; i < n; i++) {
+    damage += (Math.floor(Math.random() * d)) + 1;
+  };
+  return damage;
 }

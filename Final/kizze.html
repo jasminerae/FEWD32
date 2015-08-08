@@ -63,6 +63,7 @@
               <tr><th>Target</th><td>{{target}}</td></tr>
               <tr><th>Range</th><td>{{range}}</td></tr>
               <tr><th>Area</th><td>{{area}}</td></tr>
+              <tr><th>Effect</th><td>{{effect}}</td></tr>
               <tr><th>Components</th><td>{{components}}</td></tr>
               <tr><th>Casting Time</th><td>{{castingTime}}</td></tr>
               <tr><th>Duration</th><td>{{duration}}</td></tr>
@@ -75,8 +76,18 @@
           <!-- Back of Spell Card. -->
           <div class="back">
             <div class="name">{{name}}</div>
-            <input class="btn btn-default attackButton" type="button" value="Roll Attack">
-            <input class="btn btn-default damageButton" type="button" value="Roll Damage">
+            <hr>
+            <div class="attack">
+              <div class="rollHeader">Attack</div>
+              <input class="btn btn-default attackButton" type="button" value="Roll Attack">
+              <div class="rollResult" id="{{id}}attackResult">...</div>
+            </div>
+            <hr>
+            <div class="damage">
+              <div class="rollHeader">Damage</div>
+              <input class="btn btn-default damageButton" type="button" value="Roll {{n}}d{{d}}">
+              <div class="rollResult" id="{{id}}damageResult">...</div>
+            </div>
           </div>
         </div>
       </script>

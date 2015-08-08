@@ -79,10 +79,14 @@
               <hr>
               <div class="attack">
                 <div class="rollHeader">Attack</div>
-                <input class="btn btn-default attackButton" type="button" value="Roll Attack">
+                <input class="btn btn-default attackButton" type="button" value="Roll D20">
                 <div class="rollResult" id="{{id}}attackResult">...</div>
               </div>
             {{/a}}
+            {{#aSpecial}}
+              <hr>
+              <div class="rollResult">{{aSpecial}}</div>
+            {{/aSpecial}}
             <!-- DC -->
             {{#savingThrow}}
               <hr>

@@ -12,7 +12,7 @@
 }
 
 .front {
-  background-color: #FFFFFF;
+  background-color: #DDDDDD;
   color: #796982;
   padding: 20px;
   border: none;
@@ -20,16 +20,28 @@
   overflow: scroll;
 }
 
+.front:hover {
+  background-color: #FFFFFF;
+}
+
 .back {
   text-align: center;
-  background-color: #EEEEEE;
+  background-color: #DDDDDD;
   color: #796982;
   padding: 20px;
   border: none;
 }
 
+.back:hover {
+  background-color: #FFFFFF;
+}
+
+.front > hr {
+  border-color: #CCCCCC;
+}
+
 .back > hr {
-  border-color: #DDDDDD;
+  border-color: #CCCCCC;
 }
 
 .name {

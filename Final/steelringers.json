@@ -50,12 +50,16 @@
     "target" : "you"
   }, {
     "area" : "20-ft. radius",
+    "aSpecial" : "CMB: 16",
+    "b" : 4,
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic", "Material (octopus or squid tentacle)" ],
+    "d" : 6,
     "description" : "This spell causes a field of rubbery black tentacles to appear, burrowing up from the floor and reaching for any creature in the area. Every creature within the area of the spell is the target of a combat maneuver check made to grapple each round at the beginning of your turn, including the round that black tentacles is cast. Creatures that enter the area of effect are also automatically attacked. The tentacles do not provoke attacks of opportunity. When determining the tentacles' CMB, the tentacles use your caster level as their base attack bonus and receive a +4 bonus due to their Strength and a +1 size bonus. Roll only once for the entire spell effect each round and apply the result to all creatures in the area of effect. If the tentacles succeed in grappling a foe, that foe takes 1d6+4 points of damage and gains the grappled condition. Grappled opponents cannot move without first breaking the grapple. All other movement is prohibited unless the creature breaks the grapple first. The black tentacles spell receives a +5 bonus on grapple checks made against opponents it is already grappling, but cannot move foes or pin foes. Each round that black tentacles succeeds on a grapple check, it deals an additional 1d6+4 points of damage. The CMD of black tentacles, for the purposes of escaping the grapple, is equal to 10 + its CMB. The tentacles created by this spell cannot be damaged, but they can be dispelled as normal. The entire area of effect is considered difficult terrain while the tentacles last.",
     "duration" : "1 round/level (D)",
     "id" : "blackTentacles",
     "level" : "4",
+    "n" : 1,
     "name" : "Black Tentacles",
     "range" : "medium",
     "school" : "conjuration"
@@ -92,7 +96,7 @@
     "level" : "3",
     "name" : "Call the Void",
     "range" : "personal",
-    "savingThrow" : " Reflex for half; see text",
+    "savingThrow" : " Reflex for half",
     "school" : "evocation",
     "spellResistance" : true,
     "target" : "you"
@@ -105,7 +109,7 @@
     "level" : "1",
     "name" : "Chill Touch",
     "range" : "touch",
-    "savingThrow" : " Fortitude partial or Will negates; see text",
+    "savingThrow" : " Fortitude partial or Will negates",
     "school" : "necromancy",
     "spellResistance" : true,
     "target" : "creature or creatures touched (up to one/level)"
@@ -118,10 +122,9 @@
     "level" : "5",
     "name" : "Cloudkill",
     "range" : "medium",
-    "savingThrow" : " Fortitude partial; see text",
+    "savingThrow" : " Fortitude partial",
     "school" : "conjuration (creation) [poison]",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic", "Material (pinch of soot and salt)" ],
@@ -137,7 +140,6 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic", "Material (three nutshells)" ],
     "description" : "This spell causes confusion in the targets, making them unable to determine their actions. Roll on the following table at the start of each subject's turn each round to see what it does in that round.",
-    "duration" : "null",
     "id" : "confusion",
     "level" : "4",
     "name" : "Confusion",
@@ -165,7 +167,6 @@
     "level" : "0",
     "name" : "Dancing Lights",
     "range" : "medium",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : false
   }, {
@@ -183,17 +184,12 @@
     "target" : "one humanoid creature of 4 HD or less"
   }, {
     "castingTime" : "1 standard action",
-    "components" : "null",
     "description" : "You detect magical auras. The amount of information revealed depends on how long you study a particular area or subject.",
-    "duration" : "null",
     "id" : "detectMagic",
     "level" : "0",
     "name" : "Detect Magic",
-    "range" : "null",
-    "savingThrow" : " none",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -203,7 +199,6 @@
     "level" : "0",
     "name" : "Detect Poison",
     "range" : "close",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : false,
     "target" : "or Area one creature, one object, or a 5-ft. cube"
@@ -211,15 +206,12 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal" ],
     "description" : "You instantly transfer yourself from your current location to any other spot within range. You always arrive at exactly the spot desired - whether by simply visualizing the area or by stating direction. After using this spell, you can't take any other actions until your next turn. You can bring along objects as long as their weight doesn't exceed your maximum load. You may also bring one additional willing Medium or smaller creature (carrying gear or objects up to its maximum load) or its equivalent per three caster levels. A Large creature counts as two Medium creatures, a Huge creature counts as two Large creatures, and so forth. All creatures to be transported must be in contact with one another, and at least one of those creatures must be in contact with you.",
-    "duration" : "null",
     "id" : "dimensionDoor",
     "level" : "0",
     "name" : "Dimension Door",
-    "range" : "null",
     "savingThrow" : " none and Will negates (object)",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -237,7 +229,7 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
     "description" : "You unleash a powerful scream, inaudible to all but a single target. The target is dazed for 1 round and takes 1d6 points of sonic damage per two caster levels (maximum 5d6). A successful save negates the daze effect and halves the damage.",
-    "duration" : "instantaneous; see text",
+    "duration" : "instantaneous",
     "id" : "earPiercingScream",
     "level" : "0",
     "name" : "Ear-Piercing Scream",
@@ -263,28 +255,21 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
     "description" : "You point your finger and fire a black ray of negative energy that suppresses the life force of any living creature it",
-    "duration" : "null",
     "id" : "enervation",
     "level" : "0",
     "name" : "Enervation",
-    "range" : "null",
-    "savingThrow" : " none",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 immediate action",
     "components" : "V",
     "description" : "The affected creatures or objects fall slowly. Feather fall instantly changes the rate at which the targets fall to a mere 60 feet per round (equivalent to the end of a fall from a few feet), and the subjects take no damage upon landing while the spell is in effect. When the spell duration expires, a normal rate of falling resumes.",
-    "duration" : "null",
     "id" : "featherFall",
     "level" : "0",
     "name" : "Feather Fall",
-    "range" : "null",
     "savingThrow" : " Will negates (harmless) or Will negates (object)",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  focus (a wing feather)" ],
@@ -307,10 +292,9 @@
     "level" : "0",
     "name" : "Frostbite",
     "range" : "touch",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : true,
-    "target" : "s creature touched"
+    "target" : "creature touched"
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -328,28 +312,22 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  Material (ground mica)" ],
     "description" : "A cloud of golden particles covers everyone and everything in the area, causing creatures to become blinded and visibly outlining invisible things for the duration of the spell. All within the area are covered by the dust, which cannot be removed and continues to sparkle until it fades. Each round at the end of their turn blinded creatures may attempt new savingThrows to end the blindness effect.",
-    "duration" : "null",
     "id" : "glitterdust",
     "level" : "0",
     "name" : "Glitterdust",
-    "range" : "null",
     "savingThrow" : " Will negates (blinding only)",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
     "description" : "You create one or more bolts of negative energy infused with shadow pulled from the Shadow Plane.",
-    "duration" : "null",
     "id" : "gloomblindBolts",
     "level" : "0",
     "name" : "Gloomblind Bolts",
-    "range" : "null",
-    "savingThrow" : " Reflex negates; see text",
+    "savingThrow" : " Reflex negates",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -372,12 +350,12 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  F/Dfocus (a small, straight piece of iron)" ],
     "description" : "The subject becomes paralyzed and freezes in place. It is aware and breathes normally but cannot take any actions, even speech. Each round on its turn, the subject may attempt a new savingThrow to end the effect. This is a full-round action that does not provoke attacks of opportunity. A winged creature who is paralyzed cannot flap its wings and falls. A swimmer can't swim and may drown.",
-    "duration" : "1 round/level (D); see text",
+    "duration" : "1 round/level (D)",
     "id" : "holdPerson",
     "level" : "0",
     "name" : "Hold Person",
     "range" : "medium",
-    "savingThrow" : " Will negates; see text",
+    "savingThrow" : " Will negates",
     "school" : "universal",
     "spellResistance" : true,
     "target" : "one humanoid creature"
@@ -385,15 +363,12 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  Material (an eyelash encased in gum arabic)" ],
     "description" : "This spell functions like invisibility, except that the effect moves with the group and is broken when anyone in the group attacks. Individuals in the group cannot see each other. The spell is broken for any individual who moves more than 180 feet from the nearest member of the group. If only two individuals are affected, the one moving away from the other one loses its invisibility. If both are moving away from each other, they both become visible when the distance between them exceeds 180 feet.",
-    "duration" : "null",
     "id" : "invisibility",
     "level" : "0",
     "name" : "Invisibility",
-    "range" : "null",
     "savingThrow" : " Will negates (harmless) or Will negates (harmless, object)",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  focus (a leather loop or golden wire bent into a cup shape)" ],
@@ -403,7 +378,6 @@
     "level" : "0",
     "name" : "Levitate",
     "range" : "personal or close",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : false,
     "target" : "you or one willing creature or one object (total weight up to 100 lbs./level)"
@@ -416,7 +390,6 @@
     "level" : "0",
     "name" : "Light",
     "range" : "touch",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : false,
     "target" : "object touched"
@@ -431,8 +404,7 @@
     "range" : "120 ft.",
     "savingThrow" : " Reflex half",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  focus (a piece of cured leather)" ],
@@ -465,10 +437,9 @@
     "level" : "0",
     "name" : "Message",
     "range" : "medium",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : false,
-    "target" : "s one creature/level"
+    "target" : "one creature/level"
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -478,10 +449,8 @@
     "level" : "0",
     "name" : "Molten Orb",
     "range" : "close",
-    "savingThrow" : " none",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  Material (sesame seeds)" ],
@@ -490,10 +459,8 @@
     "level" : "0",
     "name" : "Passwall",
     "range" : "touch",
-    "savingThrow" : " none",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -519,20 +486,19 @@
     "savingThrow" : " Will negates (object)",
     "school" : "universal",
     "spellResistance" : true,
-    "target" : "s 1 cu. ft./level of food and water or one potion; see text"
+    "target" : "1 cu. ft./level of food and water or one potion"
   }, {
     "castingTime" : "1 standard action",
-    "components" : [ "Verbal, Somatic,  Material (a drop of sweat)" ],
+    "components" : [ "Verbal, Somatic,  Material (a drop of sweat)"],
     "description" : "A black ray projects from your pointing finger. You must succeed on a ranged touch attack with the ray to strike a target.",
     "duration" : "1 min./level",
     "id" : "rayofExhaustion",
     "level" : "0",
     "name" : "Ray of Exhaustion",
     "range" : "close",
-    "savingThrow" : " Fortitude partial; see text",
+    "savingThrow" : " Fortitude partial",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  focus (a clear crystal or mineral prism)" ],
@@ -560,28 +526,22 @@
     "castingTime" : "1 hour",
     "components" : [ "Verbal, Somatic,  Material (a pool of water), focus (a silver mirror worth 1,000 gp)" ],
     "description" : "This spell functions like scrying, except as noted above. Additionally, all of the following spells function reliably through the sensor: detect chaos, detect evil, detect good, detect law, detect magic, message, read magic, and tongues.",
-    "duration" : "null",
     "id" : "scrying",
     "level" : "0",
     "name" : "Scrying",
-    "range" : "null",
     "savingThrow" : " Will negates",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 round",
     "components" : [ "Verbal, Somatic,  Material (fine sand, rose petals, or a live cricket)" ],
     "description" : "A sleep spell causes a magical slumber to come upon 4 HD of creatures. Creatures with the fewest HD are affected first. Among creatures with equal HD, those who are closest to the spell's point of origin are affected first. HD that are not sufficient to affect a creature are wasted. Sleeping creatures are helpless. Slapping or wounding awakens an affected creature, but normal noise does not. Awakening a creature is a standard action (an application of the aid another action). Sleep does not target unconscious creatures, constructs, or undead creatures.",
-    "duration" : "null",
     "id" : "sleep",
     "level" : "0",
     "name" : "Sleep",
-    "range" : "null",
     "savingThrow" : " Will negates",
     "school" : "universal",
-    "spellResistance" : true,
-    "target" : "null"
+    "spellResistance" : true
   }, {
     "castingTime" : "1 standard action",
     "components" : "Verbal or S",
@@ -594,17 +554,14 @@
     "savingThrow" : " Fortitude negates (object)",
     "school" : "universal",
     "spellResistance" : true,
-    "target" : "s one Fine object"
+    "target" : "one Fine object"
   }, {
     "castingTime" : "1 round",
     "components" : [ "Verbal, Somatic,  Material (rare inks worth 250 gp)" ],
-    "duration" : "null",
     "id" : "spite",
     "level" : "0",
     "name" : "Spite",
-    "range" : "null",
-    "school" : "universal",
-    "target" : "null"
+    "school" : "universal"
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -630,7 +587,7 @@
     "savingThrow" : " Will negates (harmless)",
     "school" : "universal",
     "spellResistance" : true,
-    "target" : "s one living creature touched per three levels"
+    "target" : "one living creature touched per three levels"
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  Material (a vial containing a bit of the caster's breath)" ],
@@ -643,20 +600,17 @@
     "savingThrow" : " Fortitude partial",
     "school" : "universal",
     "spellResistance" : true,
-    "target" : "s one living creature"
+    "target" : "one living creature"
   }, {
     "castingTime" : "1 standard action",
     "components" : "Verbal",
     "description" : "This spell functions like teleport, except that there is no range limit and there is no chance you arrive off target. In addition, you need not have seen the destination, but in that case you must have at least a reliable description of the place to which you are teleporting. If you attempt to teleport with insufficient information (or with misleading information), you disappear and simply reappear in your original location. Interplanar travel is not possible.",
-    "duration" : "null",
     "id" : "teleport",
     "level" : "0",
     "name" : "Teleport",
-    "range" : "null",
     "savingThrow" : " none and Will negates (object)",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  Material (a drop of sweat)" ],
@@ -687,12 +641,11 @@
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
     "description" : "You must succeed on a melee touch attack. Your touch deals 1d6 points of damage per two caster levels (maximum 10d6). You gain temporary hit points equal to the damage you deal. You can't gain more than the subject's current hit points + the subject's Constitution score (which is enough to kill the subject). The temporary hit points disappear 1 hour later.",
-    "duration" : "instantaneous/1 hour; see text",
+    "duration" : "instantaneous/1 hour",
     "id" : "vampiricTouch",
     "level" : "0",
     "name" : "Vampiric Touch",
     "range" : "touch",
-    "savingThrow" : " none",
     "school" : "universal",
     "spellResistance" : true,
     "target" : "living creature touched"
@@ -707,8 +660,7 @@
     "range" : "close",
     "savingThrow" : " Will disbelief (if interacted with)",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   }, {
     "castingTime" : "1 standard action",
     "components" : [ "Verbal, Somatic,  Material (spider web)" ],
@@ -718,9 +670,8 @@
     "level" : "0",
     "name" : "Web",
     "range" : "medium",
-    "savingThrow" : " Reflex negates; see text",
+    "savingThrow" : " Reflex negates",
     "school" : "universal",
-    "spellResistance" : false,
-    "target" : "null"
+    "spellResistance" : false
   } ]
 }

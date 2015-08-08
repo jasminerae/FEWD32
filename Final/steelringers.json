@@ -34,10 +34,9 @@
       "school": "necromancy [death, fear, mind-affecting, sonic]",
       "description": "You create a cone of spectral energy resembling screaming elven ghosts that deals 1d4 points of damage per caster level (maximum 15d4); a successful Reflex save halves this damage. Any creature that fails its Reflex save must succeed at a Will save or become panicked for 1 round/level.",
       "name": "Banshee Blast",
-      "id": "bansheeBlast"
-      "rolls:" {
-        "damage": "15d4"
-      }
+      "id": "bansheeBlast",
+      "n": 15,
+      "d": 4
     },
     { "range": "personal",
       "target": "you",

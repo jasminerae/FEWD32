@@ -1,4 +1,5 @@
 var spellBook = {};
+var damage = 0;
 
 function fetchData() {
   var rawTemplate = $('#spellTemplate').html();
@@ -31,15 +32,26 @@ function bindEventListeners() {
     trigger: 'click'
   });
 
-  $('.attackButton').click(function(event){
+  $('.attackButton').click(function(e){
     console.log("CRITICAL HIT");
-    $(".card").flip(false);
+    event.stopPropagation();
+    var targetSpell = $(this).parent().parent().id;
+    console.log(targetSpell);
   });
 
-  $('.damageButton').click(function(event){
+  $('.damageButton').click(function(e){
+    event.stopPropagation();
     console.log("MAX DAMAGE");
-    $(".card").flip(false);
+    damage = 0;
+    console.log(rollDamage(n, d));
   });
 }
 
 fetchData();
+
+function rollDamage(n, d) {
+  for (var i = 0; i < n; i++) {
+    damage += Math.floor(Math.random * d) + 1;
+    return damage;
+  };
+}

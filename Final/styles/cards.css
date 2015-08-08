@@ -94,3 +94,34 @@
 ul {
   list-style-type: none;
 }
+
+.btn {
+  width: 160px;
+  margin-top: 50px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  letter-spacing: .5pt;
+  text-transform: uppercase;
+}
+
+.attackButton {
+  background-color: #796982;
+}
+
+.attackButton:hover {
+  background-color: #9E8086;
+  color: #FFFFFF;
+
+}
+
+.damageButton {
+  background-color: #D3162A;
+}
+
+.damageButton:hover {
+  background-color: #FF4054;
+  color: #FFFFFF;
+
+}

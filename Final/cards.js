@@ -37,7 +37,7 @@ function bindEventListeners() {
     event.stopPropagation();
     var targetSpell = $(this).parent().parent().parent().attr('id');
     attack = 0
-    attack = ("HIT");
+    attack = (rollAttack());
     $('#'+targetSpell+'attackResult').html(attack);
   });
 
@@ -52,11 +52,12 @@ function bindEventListeners() {
 
 fetchData();
 
-function rollDamage(n, d) {
-  for (var i = 0; i < n; i++) {
-    damage += (Math.floor(Math.random() * d)) + 1;
-  };
-  return damage;
+function rollAttack() {
+  attack += (Math.floor(Math.random() * 20)) + 1;
+  if (attack == 20){
+    attack = "CRIT"
+  } else { attack = attack + 1; }
+  return attack;
 }
 
 function rollDamage(n, d) {

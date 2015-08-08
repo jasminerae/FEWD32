@@ -125,7 +125,16 @@ ul {
 .attackButton:hover {
   background-color: #9E8086;
   color: #FFFFFF;
+}
 
+.attackButton:active {
+  background-color: #796982;
+  color: #FFFFFF;
+}
+
+.attackButton:focus {
+  background-color: #796982;
+  color: #FFFFFF;
 }
 
 .damageButton {
@@ -135,7 +144,16 @@ ul {
 .damageButton:hover {
   background-color: #FF4054;
   color: #FFFFFF;
+}
 
+.damageButton:active {
+  background-color: #D3162A;
+  color: #FFFFFF;
+}
+
+.damageButton:focus {
+  background-color: #D3162A;
+  color: #FFFFFF;
 }
 
 .rollResult {

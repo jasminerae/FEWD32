@@ -60,34 +60,44 @@
             <div class="level">Level {{level}}</div>
             <hr>
             <table class="table spellTable table-condensed">
-              <tr><th>Target</th><td>{{target}}</td></tr>
-              <tr><th>Range</th><td>{{range}}</td></tr>
-              <tr><th>Area</th><td>{{area}}</td></tr>
-              <tr><th>Effect</th><td>{{effect}}</td></tr>
-              <tr><th>Components</th><td>{{components}}</td></tr>
-              <tr><th>Casting Time</th><td>{{castingTime}}</td></tr>
-              <tr><th>Duration</th><td>{{duration}}</td></tr>
+              {{#target}}<tr><th>Target</th><td>{{target}}</td></tr>{{/target}}
+              {{#range}}<tr><th>Range</th><td>{{range}}</td></tr>{{/range}}
+              {{#area}}<tr><th>Area</th><td>{{area}}</td></tr>{{/area}}
+              {{#effect}}<tr><th>Effect</th><td>{{effect}}</td></tr>{{/effect}}
+              {{#components}}<tr><th>Components</th><td>{{components}}</td></tr>{{/components}}
+              {{#castingTime}}<tr><th>Casting Time</th><td>{{castingTime}}</td></tr>{{/castingTime}}
+              {{#duration}}<tr><th>Duration</th><td>{{duration}}</td></tr>{{/duration}}
             </table>
-            <div class="savingThrow">{{savingThrow}}</div>
-            <div class="spellResistance">{{spellResistance}}</div>
             <hr>
             <div class="description">{{description}}</div>
           </div>
           <!-- Back of Spell Card. -->
           <div class="back">
             <div class="name">{{name}}</div>
-            <hr>
-            <div class="attack">
-              <div class="rollHeader">Attack</div>
-              <input class="btn btn-default attackButton" type="button" value="Roll Attack">
-              <div class="rollResult" id="{{id}}attackResult">...</div>
-            </div>
-            <hr>
-            <div class="damage">
-              <div class="rollHeader">Damage</div>
-              <input class="btn btn-default damageButton" type="button" value="Roll {{n}}d{{d}}">
-              <div class="rollResult" id="{{id}}damageResult">...</div>
-            </div>
+            <!-- Attack. -->
+            {{#a}}
+              <hr>
+              <div class="attack">
+                <div class="rollHeader">Attack</div>
+                <input class="btn btn-default attackButton" type="button" value="Roll Attack">
+                <div class="rollResult" id="{{id}}attackResult">...</div>
+              </div>
+            {{/a}}
+            <!-- DC -->
+            {{#savingThrow}}
+              <hr>
+              <div class="rollHeader">{{savingThrow}}</div>
+              <div class="rollResult"> 10 + 5 + {{level}}</div>
+            {{/savingThrow}}
+            <!-- Damage. -->
+            {{#d}}
+              <hr>
+              <div class="damage">
+                <div class="rollHeader">Damage</div>
+                <input class="btn btn-default damageButton" type="button" value="Roll {{n}}d{{d}}">
+                <div class="rollResult" id="{{id}}damageResult">...</div>
+              </div>
+            {{/d}}
           </div>
         </div>
       </script>

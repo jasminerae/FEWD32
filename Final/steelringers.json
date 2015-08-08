@@ -1,5 +1,6 @@
 {
   "kizze" : [ {
+    "a" : "true",
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
     "description" : "This spell allows you to inscribe your personal rune or mark, which can consist of no more than six characters. The writing can be visible or invisible. An arcane mark spell enables you to etch the rune upon any substance without harm to the Material upon which it is placed. If an invisible mark is made, a detect magic spell causes it to glow and be visible, though not necessarily understandable. See invisibility, true seeing, a gem of seeing, or a robe of eyes likewise allows the user to see an invisible arcane mark. A read magic spell reveals the words, if any. The mark cannot be dispelled, but it can be removed by the caster or by an erase spell.",
@@ -11,7 +12,6 @@
     "range" : "Touch",
     "school" : "Universal"
   }, {
-    "a" : "DC",
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
     "description" : "As Beast Shape III, except that you change the subject into a Small or smaller animal of no more than 1 HD. If the new form would prove fatal to the creature, such as an aquatic creature not in water, the subject gets a +4 bonus on the save. If the spell succeeds, the subject must also make a Will save. If this second save fails, the creature loses its extraordinary, supernatural, and spell-like abilities, loses its ability to cast spells (if it had the ability), and gains the alignment, special abilities, and Intelligence, Wisdom, and Charisma scores of its new form in place of its own. It still retains its class and level (or HD), as well as all benefits deriving therefrom (such as base attack bonus, base save bonuses, and hit points). It retains any class features (other than spellcasting) that aren't extraordinary, supernatural, or spell-like abilities. Any polymorph effects on the target are automatically dispelled when a target fails to resist the effects of baleful polymorph, and as long as baleful polymorph remains in effect, the target cannot use other polymorph spells or effects to assume a new form. Incorporeal or gaseous creatures are immune to baleful polymorph, and a creature with the shapechanger subtype can revert to its natural form as a standard action.",
@@ -25,7 +25,6 @@
     "spellResistance" : true,
     "target" : "One creature"
   }, {
-    "a" : "DC",
     "area" : "cone-shaped burst",
     "castingTime" : "1 standard action",
     "components" : [ "Verbal", "Somatic" ],
@@ -37,7 +36,7 @@
     "n" : 15,
     "name" : "Banshee Blast",
     "range" : "30 ft.",
-    "savingThrow" : "Reflex half and will negates (see text)",
+    "savingThrow" : "Reflex half and will negates",
     "school" : "necromancy [death, fear, mind-affecting, sonic]"
   }, {
     "castingTime" : "1 standard action",
@@ -243,7 +242,7 @@
     "level" : "0",
     "name" : "Ear-Piercing Scream",
     "range" : "close",
-    "savingThrow" : " Fortitude partial (see text)",
+    "savingThrow" : " Fortitude partial",
     "school" : "universal",
     "spellResistance" : true,
     "target" : "one creature"

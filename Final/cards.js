@@ -56,7 +56,7 @@ function rollAttack() {
   attack += (Math.floor(Math.random() * 20)) + 1;
   if (attack == 20){
     attack = "CRIT"
-  } else { attack = attack + 1; }
+  } else { attack = attack + 1; } //dex mod
   return attack;
 }
 

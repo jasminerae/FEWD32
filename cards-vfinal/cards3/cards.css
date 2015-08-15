@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+  font-weight: lighter;
+  margin: 75px 0;
+  background-color: #36465D;
+}
+
+#main-navbar {
+  position: fixed;
+  top: 0;
+  width: 200%;
+  height: 47px;
+  background-image: -webkit-linear-gradient(top, #517fa4, #306088);
+  box-shadow: 2px 3px 10px rgba(50, 50, 50, 0.75);
+  z-index: 900;
+}
+
+.card {
+  width: 450px;
+  height: 425px;
+  background-size: 450px 300px;
+  background-repeat: no-repeat;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.description {
+  position: relative;
+  left: 0;
+  top: 310px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 15px;
+  font-style: italic;
+  color: #555;
+  margin: 0 auto;
+}
+
+.submitted {
+  position: relative;
+  left: 15px;
+  top: 325px;
+  width: 90%;
+  overflow: hidden;
+  font-size: 15px;
+  color: #999;
+}
+
+.notes {
+  position: relative;
+  left: 15px;
+  top: 325px;
+  height: 40px;
+  width: 190px;
+  color: lightgray;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.more {
+  left: 330px;
+  top: 280px;
+  position: relative;
+}
+
+.share {
+  left: 340px;
+  top: 280px;
+  position: relative;
+}
+
+.favorite {
+  left: 350px;
+  top: 280px;
+  position: relative;
+}

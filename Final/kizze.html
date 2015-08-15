@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kizze</title>
+
+  <!-- Include scripts and stylesheets. -->
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/profile.css">
+  <link rel="stylesheet" href="styles/cards.css">
+  <link href='https://fonts.googleapis.com/css?family=Astloch|Megrim|Raleway|Raleway+Dots' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <!-- Main container. -->
+  <div class="container">
+    <!-- Left profile column. -->
+    <div class="profile center col-md-3 col-sm-6">
+      <div class="character">Kizze, Rom Baro</div>
+      <div class="raceClass">Gnome Witch</div>
+      <div class="player">Played by Jasmine Friedrich</div>
+      <img src="img/Kizze.svg">
+        <span class="label">Lvl</span>&nbsp;<span class="stat">10</span>&emsp;<span class="label">AC</span>&nbsp;<span class="stat">12</span>&emsp;<span class="label">HP</span>&nbsp;<span class="stat">73</span>&emsp;<span class="label">Init</span>&nbsp;<span class="stat">+1</span>
+      <table class="table abilityTable">
+        <tr>
+          <th>Str</th>
+          <th>Dex</th>
+          <th>Con</th>
+          <th>Int</th>
+          <th>Wis</th>
+          <th>Cha</th>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>12</td>
+          <td>10</td>
+          <td>20</td>
+          <td>12</td>
+          <td>14</td>
+        </tr>
+      </table>
+        <span class="label">Sex</span>&nbsp;<span class="stat">&#9792;</span>&emsp;<span class="label">Age</span>&nbsp;<span class="stat">38</span>&emsp;<span class="label">Size</span>&nbsp;<span class="stat">3'5"</span>&emsp;<span class="stat">50</span><span class="label">lbs</span>
+        <div class="backstory row">
+          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+          <p>Favorite Game: Psychic Kharkala</p>
+      </div>
+    </div>
+
+    <!-- Right spellbook column. -->
+    <div id="spellBook" class="center col-md-9 col-sm-6">
+
+      <!-- Mustache tranclusion. -->
+      <script id="spellTemplate" type="x-tmpl-mustache">
+        <div id="{{id}}" class="card" style="position:relative; z-index:0">
+          <!-- Front of Spell Card. -->
+          <div class="front">
+            <div class="name">{{name}}</div>
+            <div class="school">{{school}}</div>
+            <div class="level">Level {{level}}</div>
+            <hr>
+            <table class="table spellTable table-condensed">
+              {{#target}}<tr><th>Target</th><td>{{target}}</td></tr>{{/target}}
+              {{#range}}<tr><th>Range</th><td>{{range}}</td></tr>{{/range}}
+              {{#area}}<tr><th>Area</th><td>{{area}}</td></tr>{{/area}}
+              {{#effect}}<tr><th>Effect</th><td>{{effect}}</td></tr>{{/effect}}
+              {{#components}}<tr><th>Components</th><td>{{components}}</td></tr>{{/components}}
+              {{#castingTime}}<tr><th>Casting Time</th><td>{{castingTime}}</td></tr>{{/castingTime}}
+              {{#duration}}<tr><th>Duration</th><td>{{duration}}</td></tr>{{/duration}}
+            </table>
+            <hr>
+            <div class="description">{{description}}</div>
+          </div>
+          <!-- Back of Spell Card. -->
+          <div class="back">
+            <div class="name">{{name}}</div>
+            <!-- Attack. -->
+            {{#a}}
+              <hr>
+              <div class="attack">
+                <div class="rollHeader">Attack</div>
+                <input class="btn btn-default attackButton" type="button" value="Roll D20">
+                <div class="rollResult" id="{{id}}attackResult">...</div>
+              </div>
+            {{/a}}
+            {{#aSpecial}}
+              <hr>
+              <div class="rollResult">{{aSpecial}}</div>
+            {{/aSpecial}}
+            <!-- DC -->
+            {{#savingThrow}}
+              <hr>
+              <div class="rollHeader">{{savingThrow}}</div>
+              <div class="rollResult"> 10 + 5 + {{level}}</div>
+            {{/savingThrow}}
+            <!-- Damage. -->
+            {{#d}}
+              <hr>
+              <div class="damage">
+                <div class="rollHeader">Damage</div>
+                <input class="btn btn-default damageButton" type="button" value="Roll {{n}}d{{d}}">
+                <div class="rollResult" id="{{id}}damageResult">...</div>
+              </div>
+            {{/d}}
+          </div>
+        </div>
+      </script>
+    </div>
+
+  </div>
+
+  <!-- Include scripts. -->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.15/dist/jquery.flip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+  <script src="cards.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+}
+
+#cards-container {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 320px;
+  height: 360px;
+  background-size: 320px 180px;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border: 1px solid #141414;
+  border-radius: 10px;
+  margin: 25px auto;
+  margin-right: 25px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+.cast {
+  text-align: left;
+  position: relative;
+  left: 15px;
+  top: 195px;
+  width: 90%;
+  max-height: 15px;
+  overflow: hidden;
+  font-weight: bold;
+  color: #141414;
+}
+
+.teaser {
+  text-align: left;
+  position: relative;
+  left: 15px;
+  top: 205px;
+  height: 125px;
+  overflow-y: scroll;
+  width: 90%;
+  color: #999;
+}

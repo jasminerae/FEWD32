@@ -1,0 +1,176 @@
+#spellBook {
+}
+
+.card {
+  width: 240px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 10px; 
+}
+
+.front {
+  background-color: #DDDDDD;
+  color: #796982;
+  padding: 20px;
+  border: none;
+  text-align: left;
+  overflow: scroll;
+}
+
+.front:hover {
+  background-color: #FFFFFF;
+}
+
+.back {
+  text-align: center;
+  background-color: #DDDDDD;
+  color: #796982;
+  padding: 20px;
+  border: none;
+}
+
+.back:hover {
+  background-color: #FFFFFF;
+}
+
+.front > hr {
+  border-color: #CCCCCC;
+}
+
+.back > hr {
+  border-color: #CCCCCC;
+}
+
+.name {
+  color: #382c3f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.school{
+  color: #382c3f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.level{
+  color: #796982;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.savingThrow{
+  color: #796982;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.spellResistance{
+  color: #796982;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.spellTable th {
+  color: #796982;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+  border-top: none !important; 
+}
+
+.spellTable td {
+  color: #382c3f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  border-top: none !important; 
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 8pt;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.rollHeader{
+  color: #382c3f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  width: 160px;
+  margin-top: 20px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  letter-spacing: .5pt;
+  text-transform: uppercase;
+}
+
+.attackButton {
+  background-color: #796982;
+}
+
+.attackButton:hover {
+  background-color: #9E8086;
+  color: #FFFFFF;
+}
+
+.attackButton:active {
+  background-color: #796982;
+  color: #FFFFFF;
+}
+
+.attackButton:focus {
+  background-color: #796982;
+  color: #FFFFFF;
+}
+
+.damageButton {
+  background-color: #D3162A;
+}
+
+.damageButton:hover {
+  background-color: #FF4054;
+  color: #FFFFFF;
+}
+
+.damageButton:active {
+  background-color: #D3162A;
+  color: #FFFFFF;
+}
+
+.damageButton:focus {
+  background-color: #D3162A;
+  color: #FFFFFF;
+}
+
+.rollResult {
+  margin-top: 10px;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #382c3f;
+}

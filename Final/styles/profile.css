@@ -1,0 +1,98 @@
+body {
+  background-color: #382c3f;
+  color: #DDD0E4;
+  background-image: url("../img/background.png"); 
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.solid {
+  background-color: #382c3f;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.profile {
+}
+
+.character {
+  color: #D3162A;
+  font-family: 'Megrim', sans-serif;
+  font-size: 24pt;
+}
+
+.raceClass {
+  color: #BB0A1A;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.player {
+  color: #796982;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+}
+
+.label {
+  color: #DDD0E4;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+}
+
+.stat {
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+}
+
+.abilityTable {
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  border: #4B295F;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.abilityTable th {
+  color: #796982;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.abilityTable td {
+  font-size: 14pt;
+}
+
+.backstory {
+  margin-top: 20px;
+}
+
+a {
+  color: #D3162A;
+}
+
+#footer {
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+#footer2 {
+  font-size: 8pt;
+  padding-bottom: 40pt;
+}

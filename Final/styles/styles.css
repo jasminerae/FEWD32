@@ -1,0 +1,146 @@
+body {
+  background-color: #382c3f;
+  color: #DDD0E4;
+  background-image: url("../img/background.png"); 
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.solid {
+  background-color: #382c3f;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#lineup {
+  background-image: url("../img/background.png"); 
+  padding: 40px;
+}
+
+#lineup > img {
+  width: 20%;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: 'Raleway Dots', sans-serif;
+  font-size: 36pt;
+  text-transform: uppercase;
+}
+
+#narrative {
+  margin-bottom: 40px;
+  font-family: 'Astloch', cursive;
+  font-size: 18pt;
+  text-align: center;
+}
+
+.profile {
+  min-height: 200px;
+  margin-top: 50px;
+}
+
+.headshot > img {
+  min-height: 200px;
+  width: 100%;
+}
+
+.name {
+  color: #D3162A;
+  font-family: 'Megrim', sans-serif;
+  font-size: 24pt;
+}
+
+.raceClass {
+  color: #BB0A1A;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.player {
+  color: #796982;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+}
+
+.progress {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+}
+
+.label {
+  color: #DDD0E4;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  text-transform: uppercase;
+}
+
+.stat {
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+.table {
+  font-family: 'Raleway', sans-serif;
+  font-size: 8pt;
+  border: #4B295F;
+  text-align: center;
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+th {
+  color: #796982;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+td {
+  font-size: 18pt;
+}
+
+.backstory {
+  padding-right: 20px;
+}
+
+.divisor {
+  min-height: 80px;
+  background-color: #382c3f;
+  width: 100%;
+  margin-top: 80px;
+}
+
+#map {
+  background-color: white;
+}
+
+a {
+  color: #D3162A;
+}
+
+#footer {
+  padding-top: 40px;
+  padding-bottom:40px;
+}
+
+#footer2 {
+  font-size: 8pt;
+  padding-bottom: 40pt;
+}
